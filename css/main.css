@@ -124,12 +124,20 @@ h4 {
    
 p {
   font-size: .875em;
-  line-height: 1.285em;
+  line-height: 1.285;
+}
+
+img { 
+	width: 100%;
+}
+
+figure {
+  margin: 0;
 }
    
-  address {
-    font-style: normal;
-  }
+address {
+  font-style: normal;
+}
 
 .content-wrapper {
   width: 90%;
@@ -154,6 +162,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,6 +245,9 @@ footer .copyright {
 /* HERO AREA */
 
 .hero-area {
+  background: url('../Assets/jake-melara-30679-unsplash.jpg') center #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -278,6 +297,8 @@ input[type=button] {
 /* HOMEPAGE FEATURES */
 
 .features {
+  background: url('../Assets/rawpixel-800820-unsplash1.jpg') center #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -488,13 +509,13 @@ input[type=button] {
   /* HEADER */
 
   header {
-    padding: 33px 0;
     justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
   }
 
   header figure {
@@ -514,6 +535,10 @@ input[type=button] {
   }
 
  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -554,6 +579,7 @@ input[type=button] {
   }
 
   /* Reviews */
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -563,8 +589,9 @@ input[type=button] {
     width: 85%;
   }
   
+  .reviews article figure,
   .reviews article div {
-      width: 49%; 
+    width: 49%;
   }
 
   .reviews h3 {
@@ -575,8 +602,8 @@ input[type=button] {
   /* Footer */
 
   footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
+    width: 65%;
+    margin: 100px 0;
   }
   
   footer .footer-content {
@@ -683,7 +710,7 @@ input[type=button] {
 
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
     /* Aside */
@@ -695,6 +722,10 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
     
   /* Features */
@@ -709,12 +740,12 @@ input[type=button] {
 
 /* Reviews */
 
-  .reviews h2 {
-    padding-bottom: 50px; 
-  }
-
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px; 
   }
 
   footer h4 {
